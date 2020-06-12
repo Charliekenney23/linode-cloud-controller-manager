@@ -52,6 +52,7 @@ Annotation (Suffix) | Values | Default | Description
 `check-timeout` | int (1-30) | | Duration, in seconds, to wait for a health check to succeed before considering it a failure
 `check-attempts` | int (1-30) | | Number of health check failures necessary to remove a back-end from the service
 `check-passive` | bool | `false` | When `true`, `5xx` status codes will cause the health check to fail
+`preserve` | bool | `false` | When `true`, deleting a `LoadBalancer` service does not delete the underlying NodeBalancer
 
 #### Deprecated Annotations
 
